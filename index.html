@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <script src="./scripts/products.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>DevBurger - Hamburgueria do Dev</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="./assets/logo.png" alt="" />
+          <h1><span>Dev</span>Burger</h1>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <button class="nav-button" id="product-button">Produtos</button>
+          </li>
+          <li>
+            <button class="nav-button" id="discount-button">Ofertas</button>
+          </li>
+          <li>
+            <button class="nav-button" id="category-button">Categorias</button>
+          </li>
+          <li><button class="nav-button" id="cart-button">Carrinho</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-container">
+        <div class="left-container">
+          <h2>Delicioso. Irresistível.<br />O favorito dos Devs.</h2>
+          <p>
+            Só aqui no DevBurger você encontra as melhores ofertas do mercado e
+            ainda ganha um desconto exclusivo na primeira compra.
+          </p>
+          <button class="main-button">QUERO DESCONTO</button>
+        </div>
+        <div class="right-container">
+          <img src="./assets/burgers.png" alt="Hamburguer" />
+        </div>
+      </section>
+      <section class="products-container">
+        <div class="text-box">
+          <h2 class="page-title">Produtos</h2>
+          <div class="filter">
+            <label for="categories">Filtrar por:</label>
+            <select name="categories" id="categories">
+              <option value="dev">Devs</option>
+              <option value="simple">Simples</option>
+              <option value="vegan" selected>Veganos</option>
+            </select>
+          </div>
+          <p class="discount-text"></p>
+        </div>
+        <ul class="products-grid"></ul>
+      </section>
+    </main>
+    <footer>
+      <h3>
+        Copyright &copy; 2024 - Desenvolvido por
+        <a href="https://www.linkedin.com/in/lauropjdutra" target="_blank"
+          >Lauro Dutra</a
+        >
+      </h3>
+    </footer>
+  </body>
+</html>
