@@ -5,7 +5,7 @@
 
 ## 📝 Sobre
 
-O projeto <b>DevBurger</b> apresenta uma hamburgueria fictícia que possui uma variedade de produtos, permitindo a aplicação de um cupom de desconto e a soma de todos os itens do carrinho. O projeto foi planejado para desktops e dispositivos móveis de diversos tamanhos, apresentando um design responsivo que se adapta à tela do usuário.
+O projeto <b>DevBurger</b> apresenta uma hamburgueria fictícia que possui uma variedade de produtos, permitindo a aplicação de um cupom de desconto, filtragem dos produtos e a soma de todos os itens do carrinho. O projeto foi planejado para desktops e dispositivos móveis de diversos tamanhos, apresentando um design responsivo que se adapta à tela do usuário.
 
 ## ⚙ Funcionalidades
 
