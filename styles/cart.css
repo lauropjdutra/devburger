@@ -1,0 +1,175 @@
+.cart-container {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart {
+  display: flex;
+  gap: 6rem;
+}
+
+.cart-display {
+  width: 97%;
+  border-collapse: collapse;
+}
+
+.cart-display img {
+  width: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #000000d3;
+}
+
+.table-display {
+  padding: 20px;
+  margin: 2rem 0 3rem;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  background: #111111;
+  color: #eeeeee;
+  border-radius: 20px;
+  border: 1px solid #f6df4a;
+}
+
+th {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+tr {
+  border-top: 1px solid #f6df4a77;
+}
+
+thead tr {
+  border-top: none;
+}
+
+td {
+  width: 33%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.cart-display strong {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+}
+
+.cart-display span {
+  font-size: 17px;
+  color: #eeeeee;
+  font-weight: 600;
+}
+
+.name-box {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.quantity-box {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#quantity {
+  display: flex;
+  padding: 1px;
+  width: 40px;
+  text-align: center;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  color: #eeeeee;
+  outline: none;
+}
+
+#quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.quantity-box button {
+  width: 20px;
+  height: 20px;
+  background: none;
+  color: #eeeeee;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-button {
+  padding: 2px 5.9px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fc2003;
+  background: none;
+  border-radius: 5px;
+}
+
+.quantity-box button:hover,
+.close:hover,
+.remove-button:hover {
+  opacity: 0.9;
+}
+
+.quantity-box button:active,
+.remove-button:active,
+.close:active {
+  opacity: 0.6;
+}
+
+.total-box {
+  padding: 25px;
+  margin-top: 30px;
+  width: 320px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #111111;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 1px solid #f6df4a;
+  color: #dddddd;
+}
+
+.off {
+  padding-bottom: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #aaaaaa;
+  color: #999999;
+}
+
+.total {
+  color: #ffffff;
+  text-align: right;
+  padding: 0;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.total strong {
+  font-size: 24px;
+}
+
+.close {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background: #f6df4a;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}

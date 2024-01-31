@@ -1,0 +1,169 @@
+.products-container {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.text-box h2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #f6df4a;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 7px #000000;
+}
+
+#category-list {
+  flex-wrap: wrap;
+  margin-right: 0;
+  justify-content: center;
+  gap: 0;
+  padding: 0 0.5rem;
+}
+
+.category-button {
+  background: #666666;
+  border: none;
+  background: none;
+  padding: 0 1.5rem;
+  color: #888888;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: none;
+  text-shadow: 0px 0px 10px #000000;
+  cursor: pointer;
+  transition: 0.1s;
+  border-right: 1px solid #888888;
+}
+
+#all {
+  padding-left: 0;
+}
+
+#combo {
+  padding-right: 0;
+  border-right: none;
+}
+
+.category-button:hover {
+  color: #cccccc;
+}
+
+.category-button.selected {
+  color: #ffffff;
+  border-right: 1px solid #888888;
+}
+
+.products-grid {
+  margin-right: 0;
+  margin-bottom: 3rem;
+}
+
+.products-grid img {
+  width: 100%;
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.products-grid h3 {
+  padding: 0.2rem 0.7rem 0;
+  font-size: 1.2rem;
+  color: #eeeeee;
+  text-align: left;
+}
+
+.products-grid p {
+  padding: 0 0.7rem;
+  color: #6fec5c;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.li-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #111111;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 7px #000000;
+  transition: all ease-in-out 0.2s;
+}
+
+.li-box:hover {
+  scale: 1.05;
+}
+
+.qtd {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.purchase-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.7rem 0.7rem;
+}
+
+.purchase-box button {
+  padding: 0;
+  width: 0.91rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.purchase-box button:hover {
+  opacity: 0.9;
+}
+
+.purchase-box button:active {
+  opacity: 0.6;
+}
+
+button.add-to-cart-btn {
+  width: 50%;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  background: #f6df4a;
+  color: #111111;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 0.7rem;
+}
+
+button.add-to-cart-btn:hover {
+  background: #f6ef5b;
+  opacity: 1;
+}
+
+button.add-to-cart-btn:active {
+  opacity: 0.6;
+}
+
+.li-box input {
+  background: #eee;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  width: 1.5rem;
+  padding: 0.3rem 0 0.25rem;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.li-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,10 +1,35 @@
 @media only screen and (max-width: 600px) {
+  .animated {
+    opacity: 1;
+    transform: translateY(50%);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .show-animation {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   header {
     flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo a {
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 4rem;
   }
 
   ul {
-    gap: 0px;
+    gap: 1rem;
+    margin-right: 4rem;
   }
 
   .nav-button {
@@ -13,62 +38,323 @@
   }
 
   .hero-container {
+    padding: 0;
+    height: 100%;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .left-container {
     align-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
   h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .left-container h2 {
-    width: auto;
+    margin-top: 3rem;
+    width: 100%;
   }
 
   .left-container p {
-    width: 90%;
-    font-size: 20px;
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+  }
+
+  .main-button {
+    width: 11rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
   }
 
   .right-container {
-    width: auto;
+    display: none;
   }
 
-  .right-container img {
-    margin-top: 50px;
-    width: 340px;
+  .main-burger {
+    margin: 3rem 0;
+    width: 80%;
+  }
+
+  img.section-icon {
+    width: 5rem;
+  }
+
+  .highlight img {
+    width: 10rem;
+  }
+
+  .highlights-container h3,
+  .customers-container h3,
+  .highlight-box h4 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .highlight {
+    height: 30rem;
+  }
+
+  .polygon strong {
+    font-size: 9rem;
+    width: 83%;
+  }
+
+  .highlight-box {
+    text-align: center;
+  }
+
+  .highlight-box p {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  .highlight-box button {
+    padding: 0.7rem 2rem;
+    font-size: 0.7rem;
+  }
+
+  .right strong {
+    width: 97%;
+  }
+
+  .customer-box img {
+    width: 8rem;
+  }
+
+  .customer-box p {
+    width: 90%;
+  }
+
+  .customers-buttons img {
+    width: 3rem;
+  }
+
+  .coupons {
+    flex-direction: column;
+  }
+
+  .three {
+    gap: 1rem;
+    margin: 0 auto 2rem;
+    width: 83.53%;
+  }
+
+  .three img {
+    width: 8rem;
+  }
+
+  .three h3 {
+    font-size: 1rem;
+  }
+
+  .three h4 {
+    font-size: 0.7rem;
+  }
+
+  .three-text {
+    gap: 0.5rem;
+  }
+
+  .three button {
+    margin-bottom: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  #category-list {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .category-button {
+    padding: 0;
+    border-right: none;
+  }
+
+  .category-button.selected {
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  .cart {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .table-display {
+    max-width: 22rem;
+    padding: 10px;
+  }
+
+  .cart-display {
+    width: 100%;
+  }
+
+  .cart-display strong {
+    text-align: center;
+  }
+
+  td {
+    padding: 10px 0;
+  }
+
+  th {
+    padding: 10px 0;
+    font-size: 0.7rem;
+  }
+
+  .name-box {
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total-box {
+    width: 22rem;
+    padding: 30px 35px;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
   header {
     flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo a {
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 4rem;
   }
 
   ul {
-    gap: 0px;
+    gap: 1rem;
+    margin-right: 4rem;
+  }
+
+  .nav-button {
+    padding: 10px 0;
+    font-size: 14px;
   }
 
   .hero-container {
+    padding: 0;
+    height: 100%;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   .left-container {
     align-items: center;
     text-align: center;
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .left-container h2 {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .left-container p {
+    width: 65%;
+    padding: 0 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+  }
+
+  .main-button {
+    width: 11rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
   }
 
   .right-container {
-    width: auto;
+    display: none;
   }
 
-  .right-container img {
-    margin-top: 50px;
-    width: 500px;
+  .main-burger {
+    margin: 4rem 0;
+    width: 20rem;
+  }
+
+  #category-list {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .category-button {
+    padding: 0;
+    border-right: none;
+  }
+
+  .category-button.selected {
+    border-bottom: 1px solid #ffffff;
+    border-right: none;
+  }
+
+  .cart {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .table-display {
+    max-width: 22rem;
+    padding: 10px;
+  }
+
+  .cart-display {
+    width: 100%;
+  }
+
+  .cart-display strong {
+    text-align: center;
+  }
+
+  td {
+    padding: 10px 0;
+  }
+
+  th {
+    padding: 10px 0;
+    font-size: 0.7rem;
+  }
+
+  .name-box {
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .total-box {
+    width: 22rem;
+    padding: 30px 35px;
   }
 }

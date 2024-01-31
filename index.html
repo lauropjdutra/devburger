@@ -3,73 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lauro Dutra" />
+    <meta
+      name="keywords"
+      content="dev, front-end, web developer, programador, desenvolvedor, html, css, javascript"
+    />
+    <meta
+      name="description"
+      content="Projeto de uma hamburgueria fictícia com diversos tipos de hambúrgueres, batata frita, sobremesas e combos completos."
+    />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
-    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <script src="./scripts/products.js" defer></script>
     <script src="./scripts/script.js" defer></script>
-    <title>DevBurger - Hamburgueria do Dev</title>
+    <script
+      src="https://kit.fontawesome.com/e12cc718e7.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>DevBurger - Hamburgueria dos Devs</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="/dev-burger/">
-          <img src="./assets/logo.png" alt="" />
-          <h1><span>Dev</span>Burger</h1>
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <button class="nav-button" id="product-button">Produtos</button>
-          </li>
-          <li>
-            <button class="nav-button" id="discount-button">Ofertas</button>
-          </li>
-          <li>
-            <button class="nav-button" id="category-button">Categorias</button>
-          </li>
-          <li><button class="nav-button" id="cart-button">Carrinho</button></li>
-        </ul>
-      </nav>
-    </header>
     <main>
-      <section class="hero-container">
-        <div class="left-container">
-          <h2>Delicioso. Irresistível.<br />O favorito dos Devs.</h2>
-          <p>
-            Só aqui no DevBurger você encontra as melhores ofertas do mercado e
-            ainda ganha um desconto exclusivo na primeira compra.
-          </p>
-          <button class="main-button">QUERO DESCONTO</button>
+      <header>
+        <div class="logo animated" title="DevBurger">
+          <a href="index.html">
+            <img src="./assets/logo2.png" alt="" />
+            <h1><span>Dev</span>Burger</h1>
+          </a>
         </div>
-        <div class="right-container">
-          <img src="./assets/burgers.png" alt="Hamburguer" />
-        </div>
-      </section>
+        <nav class="animated">
+          <ul>
+            <li>
+              <button class="nav-button animated" id="home-button" title="Home">
+                Home
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-button animated"
+                id="product-button"
+                title="Cardápio"
+              >
+                Cardápio
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-button animated"
+                id="coupons-button"
+                title="Cupons"
+              >
+                Cupons
+              </button>
+            </li>
+            <li>
+              <button
+                class="nav-button animated"
+                id="cart-button"
+                title="Carrinho"
+              >
+                <i
+                  style="margin-right: 3px"
+                  class="fa-solid fa-cart-shopping"
+                ></i>
+                Carrinho
+              </button>
+              <div id="cart-qtd">0</div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <video src="./assets/burger-video.mp4" autoplay muted loop></video>
+      <div class="dark-mask"></div>
+      <div class="main-container">
+        <section class="hero-container">
+          <div class="left-container animated text-animated">
+            <h2 title="Delicioso. Irresistível. O favorito dos Devs.">
+              Delicioso. Irresistível. <br />O favorito dos Devs.
+            </h2>
+            <p
+              title="Só aqui na DevBurger você encontra as melhores ofertas do mercado e ainda ganha um desconto exclusivo na primeira compra acima de R$ 30,00."
+            >
+              Só aqui na DevBurger você encontra as melhores ofertas do mercado
+              e ainda ganha um desconto exclusivo na primeira compra acima de R$
+              30,00.
+            </p>
+            <button class="main-button" title="Ver Ofertas">VER OFERTAS</button>
+          </div>
+          <img
+            style="opacity: 1"
+            class="main-burger animated text-animated"
+            src="./assets/main-burger.png"
+            alt="Hambúrguer"
+            title="Hambúrguer"
+          />
+          <div class="right-container"></div>
+        </section>
+        <section class="highlights-container">
+          <img
+            class="section-icon"
+            src="./assets/food-menu.png"
+            alt="Cardápio de restaurante"
+            title="Cardápio"
+          />
+          <h3 title="Novidades que acabaram de chegar ao nosso cardápio">
+            Novidades que acabaram de chegar ao nosso cardápio
+          </h3>
+          <article class="highlight">
+            <div class="polygon"><strong>1</strong></div>
+            <div class="highlight-box">
+              <img
+                src="./assets/dev-cheddar.jpg"
+                alt="Dev Cheddar"
+                title="Dev Cheddar"
+              />
+              <h4>Dev Cheddar</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur sint alias, mollitia rem magni officiis animi! A eum
+                consequuntur quae, explicabo ea magni numquam consectetur earum
+                repellat voluptatum. Pariatur, neque.
+              </p>
+              <button class="learn-more" title="Saiba Mais">Saiba mais</button>
+            </div>
+          </article>
+          <article class="highlight right">
+            <div class="highlight-box">
+              <img
+                src="./assets/dev-fury.jpg"
+                alt="Dev Kids"
+                title="Dev Kids"
+              />
+              <h4>Dev Kids</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur sint alias, mollitia rem magni officiis animi! A eum
+                consequuntur quae, explicabo ea magni numquam consectetur earum
+                repellat voluptatum. Pariatur, neque.
+              </p>
+              <button class="learn-more" title="Saiba Mais">Saiba mais</button>
+            </div>
+            <div class="polygon"><strong>2</strong></div>
+          </article>
+          <article class="highlight">
+            <div class="polygon"><strong>3</strong></div>
+            <div class="highlight-box">
+              <img src="./assets/dev-fit.jpg" alt="Dev Fit" title="Dev Fit" />
+              <h4>Dev Fit</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur sint alias, mollitia rem magni officiis animi! A eum
+                consequuntur quae, explicabo ea magni numquam consectetur earum
+                repellat voluptatum. Pariatur, neque.
+              </p>
+              <button class="learn-more" title="Saiba Mais">Saiba mais</button>
+            </div>
+          </article>
+          <article class="highlight right">
+            <div class="highlight-box">
+              <img
+                src="./assets/dev-chicken.jpg"
+                alt="Dev Chicken"
+                title="Dev Chicken"
+              />
+              <h4>Dev Chicken</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur sint alias, mollitia rem magni officiis animi! A eum
+                consequuntur quae, explicabo ea magni numquam consectetur earum
+                repellat voluptatum. Pariatur, neque.
+              </p>
+              <button class="learn-more" title="Saiba Mais">Saiba mais</button>
+            </div>
+            <div class="polygon"><strong>4</strong></div>
+          </article>
+        </section>
+        <section class="customers-container">
+          <img
+            class="section-icon"
+            src="./assets/satisfaction.png"
+            alt="Satisfação dos clientes"
+            title="Avaliações"
+          />
+          <h3 title="O que os clientes estão falando sobre os nossos produtos">
+            O que os clientes estão falando sobre os nossos produtos
+          </h3>
+          <article class="customer-box">
+            <img
+              id="customer-img"
+              src="./assets/joao.png"
+              alt="Foto do cliente"
+              title="Foto do cliente"
+            />
+            <img src="./assets/stars.png" alt="Avaliação" title="Avaliação"/>
+            <h4 title="Nome do cliente">Joãozinho</h4>
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+              eaque aut quidem necessitatibus nesciunt saepe quisquam hic
+              assumenda cum, facilis consequatur autem dolore id ducimus
+              officiis nobis soluta, quas blanditiis.”
+            </p>
+            <nav class="customers-buttons">
+              <img
+                src="./assets/joao.png"
+                alt="Cliente 1"
+                onclick="changeCustomerImage('./assets/joao.png', 'Joãozinho')"
+              />
+              <img
+                src="./assets/maria.png"
+                alt="Cliente 2"
+                onclick="changeCustomerImage('./assets/maria.png', 'Mariazinha')"
+              />
+              <img
+                src="./assets/joao.png"
+                alt="Cliente 3"
+                onclick="changeCustomerImage('./assets/joao.png', 'Zézinho')"
+              />
+              <img
+                src="./assets/maria.png"
+                alt="Cliente 4"
+                onclick="changeCustomerImage('./assets/maria.png', 'Aninha')"
+              />
+            </nav>
+          </article>
+        </section>
+      </div>
       <section class="products-container">
         <div class="text-box">
-          <h2 class="page-title">Produtos</h2>
-          <div class="filter">
-            <label for="categories">Filtrar por:</label>
-            <select name="categories" id="categories">
-              <option value="dev">Devs</option>
-              <option value="simple">Simples</option>
-              <option value="vegan" selected>Veganos</option>
-            </select>
-          </div>
-          <p class="discount-text"></p>
+          <h2 class="page-title" title="Cardápio">Cardápio</h2>
         </div>
+        <nav class="categories">
+          <ul id="category-list">
+            <li>
+              <button class="category-button" id="all" title="Todos">
+                Todos
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="devs" title="Devs">
+                Devs
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="simple" title="Tradicionais">
+                Tradicionais
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="vegan" title="Veganos">
+                Veganos
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="frie" title="Batata Frita">
+                Batata Frita
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="dessert" title="Sobremesas">
+                Sobremesas
+              </button>
+            </li>
+            <li>
+              <button class="category-button" id="combo" title="Combos">
+                Combos
+              </button>
+            </li>
+          </ul>
+        </nav>
         <ul class="products-grid"></ul>
       </section>
+      <section class="cart-container">
+        <div class="text-box">
+          <h2 class="page-title" title="Carrinho">Carrinho</h2>
+        </div>
+        <div class="cart">
+          <article class="table-display">
+            <table class="cart-display">
+              <thead>
+                <tr>
+                  <th title="Produto">Produto</th>
+                  <th title="Preço">Preço</th>
+                  <th title="Quantidade">Quantidade</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </article>
+          <article class="total-display">
+            <div class="total-box">
+              <p class="subtotal" title="Subtotal">
+                Subtotal (0 produto): <strong>R$ 0,00</strong>
+              </p>
+              <p class="off" title="Desconto">
+                Desconto (0% OFF): <strong>R$ 0,00</strong>
+              </p>
+              <h3 class="total" title="Total">
+                Total: <strong>R$ 0,00</strong>
+              </h3>
+              <button class="close" title="Fechar Pedido">Fechar pedido</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="coupons-container">
+        <div class="text-box">
+          <h2 class="page-title" title="Cupons">Cupons</h2>
+        </div>
+        <article class="coupons">
+          <div class="coupon one">
+            <img
+              src="./assets/10off.jpg"
+              alt="Cupom de 10% de desconto"
+              title="Cupom de 10% de desconto"
+            />
+            <h4 title="nas compras acima de R$ 30,00">
+              NAS COMPRAS ACIMA DE R$ 30,00
+            </h4>
+            <button class="activate-discount" title="Ativar Cupom">
+              ATIVAR CUPOM
+            </button>
+          </div>
+          <div class="coupon two">
+            <img
+              src="./assets/20off.jpg"
+              alt="Cupom de 20% de desconto"
+              title="Cupom de 20% de desconto"
+            />
+            <h4 title="nas compras acima de R$ 100,00">
+              NAS COMPRAS ACIMA DE R$ 100,00
+            </h4>
+            <button class="activate-discount" title="Ativar Cupom">
+              ATIVAR CUPOM
+            </button>
+          </div>
+        </article>
+        <article class="big-coupon">
+          <div class="coupon three">
+            <img
+              src="./assets/30off.webp"
+              alt="Cupom de 30% de desconto."
+              title="Cupom de 30% de desconto."
+            />
+            <div class="three-text">
+              <h3 title="Super Desconto">SUPER DESCONTO</h3>
+              <h4 title="nas compras acima de R$ 200,00">
+                NAS COMPRAS ACIMA DE R$ 200,00
+              </h4>
+              <button class="activate-discount" title="Ativar Cupom">
+                ATIVAR CUPOM
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div id="custom-alert" class="modal">
+        <div class="modal-content">
+          <button class="close-alert" title="Fechar">&times;</button>
+          <p id="alert-message"></p>
+          <button class="alert-button">Ir para o cardápio</button>
+        </div>
+      </div>
     </main>
     <footer>
-      <h3>
+      <h3 title="Desenvolvido por Lauro Dutra">
         Copyright &copy; 2024 - Desenvolvido por
         <a href="https://www.linkedin.com/in/lauropjdutra" target="_blank"
           >Lauro Dutra</a
         >
       </h3>
+      <h4>
+        Contato:
+        <a
+          href="https:/www.linkedin.com/in/lauropjdutra"
+          target="_blank"
+          title="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.github.com/lauropjdutra"
+          target="_blank"
+          title="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://wa.me/556293449840" target="_blank" title="WhatsApp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </h4>
     </footer>
   </body>
 </html>
