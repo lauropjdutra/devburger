@@ -113,7 +113,6 @@ const showProducts = (productArray) => {
   }
   hideVideo();
   increaseOrDecrease();
-  toggleCategory(document.querySelector("#all"));
 };
 
 // ADICIONA OUVINTES NOS BOTÕES DA HOME
@@ -123,6 +122,7 @@ const learnMore = () => {
     button.addEventListener("click", () => {
       showProducts(menuOptions);
       scrollToTop();
+      toggleCategory(document.querySelector("#all"));
     });
   }
 };
@@ -203,6 +203,7 @@ function showAlert(message) {
   goToButton.onclick = function () {
     customAlert.style.display = "none";
     showProducts(menuOptions);
+    toggleCategory(document.querySelector("#all"));
   };
   window.onclick = function (event) {
     if (event.target == customAlert) {
@@ -470,6 +471,7 @@ const updateTotal = () => {
       goToButton.onclick = function () {
         customAlert.style.display = "none";
         showProducts(menuOptions);
+        toggleCategory(document.querySelector("#all"));
       };
     } else {
       closeOrder();
@@ -525,9 +527,15 @@ const changeCustomerImage = (newImage, newName) => {
   customerName.innerText = newName;
 };
 
+function toggleMenu() {
+  var menu = document.querySelector('.animated ul');
+  menu.classList.toggle('show');
+}
+
 // EVENTOS
 mainButton.addEventListener("click", () => {
   showProducts(menuOptions);
+  toggleCategory(document.querySelector("#all"));
 });
 homeButton.addEventListener("click", () => {
   scrollToTop();
@@ -536,6 +544,7 @@ homeButton.addEventListener("click", () => {
 });
 productButton.addEventListener("click", () => {
   showProducts(menuOptions);
+  toggleCategory(document.querySelector("#all"));
 });
 couponsButton.addEventListener("click", showCoupons);
 cartButton.addEventListener("click", showCart);

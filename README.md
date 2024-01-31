@@ -1,15 +1,15 @@
-<img src="./assets/mockup.jpg">
+<img src="./assets/mockup.png">
 <div align=center>
-<h1>DEV BURGER</h1>
+<h1>DevBurger</h1>
 </div>
 
 ## 📝 Sobre
 
-O projeto <b>DevBurger</b> apresenta uma hamburgueria fictícia que possui uma variedade de produtos, permitindo a aplicação de um cupom de desconto, filtragem dos produtos e a soma de todos os itens do carrinho. O projeto foi planejado para desktops e dispositivos móveis de diversos tamanhos, apresentando um design responsivo que se adapta à tela do usuário.
+O projeto <b>DevBurger</b> apresenta uma hamburgueria fictícia que possui uma variedade de produtos, permitindo a aplicação de cupons de desconto, filtragem do cardápio e a adição e remoção de itens do carrinho, que realiza a soma do total e calcula o desconto dinamicamente. Esta aplicação foi desenvolvida tanto para desktops quanto para dispositivos móveis de diversos tamanhos, apresentando um design responsivo que se adapta à tela do usuário.
 
 ## ⚙ Funcionalidades
 
-Para exibir a lista de produtos, clique no botão <i>Produtos</i> ou clique em <i>Ofertas</i> para obter a lista com um cupom de 10% de desconto já aplicado. O botão <i>Quero desconto</i>, na página inicial, exibe a mesma lista de ofertas com o desconto aplicado. Em <i>Categorias</i>, é possível filtrar os produtos por categoria e exibi-los na tela. Para saber o valor da soma de todos os itens, clique no botão <i>Carrinho</i>.
+Para exibir a grade de produtos, clique no botão <i>Cardápio</i> ou clique em <i>Ver Ofertas</i> para acessar a página. No <i>Cardápio</i>, também é possível filtrar os produtos por categoria e exibi-los na tela. O botão <i>Cupons</i> exibe os cupons disponíveis para serem usados na compra. Para acessar seus pedidos, clique em <i>Carrinho</i> e verifique o valor total e o desconto aplicado. Boas compras!
 
 ## 🤝🏻 Agradecimentos
 

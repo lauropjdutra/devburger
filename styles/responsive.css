@@ -1,4 +1,9 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
+  video, .dark-mask {
+    height: 113%;
+    display: none;
+  }
+  
   .animated {
     opacity: 1;
     transform: translateY(50%);
@@ -9,10 +14,9 @@
     opacity: 1;
     transform: translateY(0);
   }
-
+  
   header {
     flex-direction: column;
-    padding: 1rem 0;
   }
 
   .logo a {
@@ -20,21 +24,22 @@
   }
 
   h1 {
-    font-size: 2rem;
+    margin: 0.8rem 0;
+    font-size: 2.5rem;
   }
 
   .logo img {
-    width: 4rem;
+    width: 5rem;
   }
 
   ul {
-    gap: 1rem;
+    gap: 2rem;
     margin-right: 4rem;
   }
 
   .nav-button {
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .hero-container {
@@ -51,8 +56,8 @@
   }
 
   h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
   }
 
   .left-container h2 {
@@ -61,10 +66,10 @@
   }
 
   .left-container p {
-    width: 100%;
-    padding: 0 1.5rem;
-    font-size: 1.15rem;
-    line-height: 1.8rem;
+    width: 70%;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
   }
 
   .main-button {
@@ -79,12 +84,12 @@
   }
 
   .main-burger {
-    margin: 3rem 0;
-    width: 80%;
+    margin: 4rem 0;
+    width: 23rem;
   }
 
   img.section-icon {
-    width: 5rem;
+    width: 7rem;
   }
 
   .highlight img {
@@ -94,8 +99,8 @@
   .highlights-container h3,
   .customers-container h3,
   .highlight-box h4 {
-    width: 100%;
-    font-size: 1.5rem;
+    width: 90%;
+    font-size: 5vw;
   }
 
   .highlight {
@@ -104,7 +109,7 @@
 
   .polygon strong {
     font-size: 9rem;
-    width: 83%;
+    width: 78%;
   }
 
   .highlight-box {
@@ -113,7 +118,7 @@
 
   .highlight-box p {
     font-size: 0.8rem;
-    width: 90%;
+    width: 70%;
   }
 
   .highlight-box button {
@@ -122,7 +127,7 @@
   }
 
   .right strong {
-    width: 97%;
+    width: 85%;
   }
 
   .customer-box img {
@@ -134,7 +139,7 @@
   }
 
   .customers-buttons img {
-    width: 3rem;
+    width: 4rem;
   }
 
   .coupons {
@@ -168,15 +173,16 @@
   }
 
   .modal-content {
-    width: 90%;
+    width: 70%;
   }
 
   #category-list {
-    gap: 1.5rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
   }
 
   .category-button {
+    font-size: 15px;
     padding: 0;
     border-right: none;
   }
@@ -194,12 +200,9 @@
   }
 
   .table-display {
-    max-width: 22rem;
-    padding: 10px;
-  }
-
-  .cart-display {
-    width: 100%;
+    width: 21rem;
+    padding: 10px 20px;
+    margin: 1rem;
   }
 
   .cart-display strong {
@@ -218,28 +221,19 @@
   .name-box {
     padding-left: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .total-box {
-    width: 22rem;
-    padding: 30px 35px;
+    margin-top: 1rem;
+    width: 21rem;
+    padding: 10px 20px;
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  header {
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  .logo a {
-    gap: 1rem;
-  }
-
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 2rem;
+    margin: 0;
   }
 
   .logo img {
@@ -252,109 +246,64 @@
   }
 
   .nav-button {
-    padding: 10px 0;
     font-size: 14px;
   }
 
-  .hero-container {
-    padding: 0;
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .left-container {
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 2.5rem;
   }
 
-  .left-container h2 {
-    margin-top: 3rem;
-    width: 100%;
-  }
-
   .left-container p {
-    width: 65%;
+    width: 100%;
     padding: 0 1.5rem;
-    font-size: 1.15rem;
+    font-size: 1.08rem;
     line-height: 1.8rem;
   }
 
-  .main-button {
-    width: 11rem;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-
-  .right-container {
-    display: none;
-  }
-
   .main-burger {
-    margin: 4rem 0;
-    width: 20rem;
+    width: 80%;
   }
 
-  #category-list {
-    gap: 1.5rem;
-    flex-wrap: wrap;
+  img.section-icon {
+    width: 5rem;
   }
 
-  .category-button {
-    padding: 0;
-    border-right: none;
+  .highlight img {
+    width: 8rem;
   }
 
-  .category-button.selected {
-    border-bottom: 1px solid #ffffff;
-    border-right: none;
+  .highlights-container h3,
+  .customers-container h3,
+  .highlight-box h4 {
+    font-size: 1.2rem;
   }
 
-  .cart {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
-    margin-bottom: 2rem;
+  .polygon strong {
+    width: 83%;
   }
 
-  .table-display {
-    max-width: 22rem;
-    padding: 10px;
+  .highlight-box p {
+    width: 80%;
   }
 
-  .cart-display {
-    width: 100%;
+  .highlight-box button {
+    padding: 0.5rem 2rem;
   }
 
-  .cart-display strong {
-    text-align: center;
+  .right strong {
+    width: 97%;
   }
 
-  td {
-    padding: 10px 0;
+  .coupons {
+    width: 90%;
   }
 
-  th {
-    padding: 10px 0;
-    font-size: 0.7rem;
+  .three {
+    width: 90%;
   }
 
-  .name-box {
-    padding-left: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .total-box {
-    width: 22rem;
-    padding: 30px 35px;
+  .modal-content {
+    width: 90%;
   }
 }
