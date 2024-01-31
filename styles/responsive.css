@@ -1,7 +1,6 @@
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   video, .dark-mask {
     height: 113%;
-    display: none;
   }
   
   .animated {
